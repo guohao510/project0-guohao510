@@ -1,11 +1,36 @@
 <! DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- 新 Bootstrap4 核心 CSS 文件 -->
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+		 
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+		 
+		<!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+		<script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+		 
+		<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+		<style type="text/css">
+			.intro {text-align:center;}
+			.row{color:blue;font-size:120%;}
+			#para {color: red;font-size:150%;}
+			body {background-image: url(https://guohao510.github.io/project0-guohao510/2.jpg);background-repeat: no-repeat;background-size: contain;}
+			table {color:blue;font-size:120%;background-color: #cccc;}
+			a:link {color: green;}
+			a:visited {color: purple;}
+			a:hover {color: red;}
+			@media screen and (max-width: 900px) {body {font-size: 50%;}}
+		</style>
 		<title>麦林炮手 视频集锦</title>
 	</head>
 	<body>
 		<p>
-			<h1>
+			<h1 class="intro">
 				麦林炮手 崔丝塔娜 视频集锦
 			</h1>
 		</p>
@@ -23,5 +48,21 @@
 				<h2>视频集锦</h2>
 			</a>
 		</p>
+		<div class="dropdown">
+		    <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">全部
+		        <span class="caret"></span>
+		    </button>
+		    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+		        <li role="presentation">
+		            <a role="menuitem" tabindex="-1" href="#">官方</a>
+		        </li>
+		        <li role="presentation">
+		            <a role="menuitem" tabindex="-1" href="#">赛事</a>
+		        </li>
+		        <li role="presentation">
+		            <a role="menuitem" tabindex="-1" href="#">解说</a>
+		        </li>
+		    </ul>
+		</div>
 	</body>
 </html>
